@@ -4783,7 +4783,7 @@
       "description": "Hyper Application",
       "manipulators": [
         {
-          "description": "command + e = finder",
+          "description": "command + e",
           "type": "basic",
           "from": {
             "key_code": "e",
@@ -4799,12 +4799,12 @@
           },
           "to": [
             {
-              "shell_command": "open -a finder"
+              "shell_command": "osascript -e 'tell application id \"com.runningwithcrayons.Alfred\" to run trigger \"E\" in workflow \"com.thirteen37.capslock\" with argument \"Cmd\"'"
             }
           ]
         },
         {
-          "description": "option + e = mail",
+          "description": "option + e",
           "type": "basic",
           "from": {
             "key_code": "e",
@@ -4820,12 +4820,12 @@
           },
           "to": [
             {
-              "shell_command": "open -a mail"
+              "shell_command": "osascript -e 'tell application id \"com.runningwithcrayons.Alfred\" to run trigger \"E\" in workflow \"com.thirteen37.capslock\" with argument \"Opt\"'"
             }
           ]
         },
         {
-          "description": "e = safari",
+          "description": "e",
           "type": "basic",
           "from": {
             "key_code": "e",
@@ -4840,12 +4840,12 @@
           },
           "to": [
             {
-              "shell_command": "open -a Safari"
+              "shell_command": "osascript -e 'tell application id \"com.runningwithcrayons.Alfred\" to run trigger \"E\" in workflow \"com.thirteen37.capslock\"'"
             }
           ]
         },
         {
-          "description": "command + r = preview",
+          "description": "command + r",
           "type": "basic",
           "from": {
             "key_code": "r",
@@ -4861,12 +4861,12 @@
           },
           "to": [
             {
-              "shell_command": "open -a Preview"
+              "shell_command": "osascript -e 'tell application id \"com.runningwithcrayons.Alfred\" to run trigger \"F\" in workflow \"com.thirteen37.capslock\" with argument \"Cmd\"'"
             }
           ]
         },
         {
-          "description": "option + r = terminal",
+          "description": "option + r",
           "type": "basic",
           "from": {
             "key_code": "r",
@@ -4882,12 +4882,12 @@
           },
           "to": [
             {
-              "shell_command": "open -a terminal"
+              "shell_command": "osascript -e 'tell application id \"com.runningwithcrayons.Alfred\" to run trigger \"F\" in workflow \"com.thirteen37.capslock\" with argument \"Opt\"'"
             }
           ]
         },
         {
-          "description": "r = iTerm2",
+          "description": "r",
           "type": "basic",
           "from": {
             "key_code": "r",
@@ -4902,12 +4902,12 @@
           },
           "to": [
             {
-              "shell_command": "open -a iTerm"
+              "shell_command": "osascript -e 'tell application id \"com.runningwithcrayons.Alfred\" to run trigger \"F\" in workflow \"com.thirteen37.capslock\"'"
             }
           ]
         },
         {
-          "description": "command + t = typora",
+          "description": "command + t",
           "type": "basic",
           "from": {
             "key_code": "t",
@@ -4923,12 +4923,12 @@
           },
           "to": [
             {
-              "shell_command": "open -a Typora"
+              "shell_command": "osascript -e 'tell application id \"com.runningwithcrayons.Alfred\" to run trigger \"T\" in workflow \"com.thirteen37.capslock\" with argument \"Cmd\"'"
             }
           ]
         },
         {
-          "description": "option + t = notes",
+          "description": "option + t",
           "type": "basic",
           "from": {
             "key_code": "t",
@@ -4944,12 +4944,12 @@
           },
           "to": [
             {
-              "shell_command": "open -a notes"
+              "shell_command": "osascript -e 'tell application id \"com.runningwithcrayons.Alfred\" to run trigger \"T\" in workflow \"com.thirteen37.capslock\" with argument \"Opt\"'"
             }
           ]
         },
         {
-          "description": "t = vscode",
+          "description": "t",
           "type": "basic",
           "from": {
             "key_code": "t",
@@ -4964,12 +4964,12 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Visual Studio Code'"
+              "shell_command": "osascript -e 'tell application id \"com.runningwithcrayons.Alfred\" to run trigger \"T\" in workflow \"com.thirteen37.capslock\"'"
             }
           ]
         },
         {
-          "description": "command + y = karabiner",
+          "description": "command + y",
           "type": "basic",
           "from": {
             "key_code": "y",
@@ -4985,12 +4985,12 @@
           },
           "to": [
             {
-              "shell_command": "open -a Karabiner-Elements"
+              "shell_command": "osascript -e 'tell application id \"com.runningwithcrayons.Alfred\" to run trigger \"Y\" in workflow \"com.thirteen37.capslock\" with argument \"Cmd\"'"
             }
           ]
         },
         {
-          "description": "option + y = amphetamine",
+          "description": "option + y",
           "type": "basic",
           "from": {
             "key_code": "y",
@@ -5006,12 +5006,12 @@
           },
           "to": [
             {
-              "shell_command": "open -a amphetamine"
+              "shell_command": "osascript -e 'tell application id \"com.runningwithcrayons.Alfred\" to run trigger \"Y\" in workflow \"com.thirteen37.capslock\" with argument \"Opt\"'"
             }
           ]
         },
         {
-          "description": "y = Siri",
+          "description": "y",
           "type": "basic",
           "from": {
             "key_code": "y",
@@ -5026,12 +5026,12 @@
           },
           "to": [
             {
-              "shell_command": "open -a Siri"
+              "shell_command": "osascript -e 'tell application id \"com.runningwithcrayons.Alfred\" to run trigger \"Y\" in workflow \"com.thirteen37.capslock\"'"
             }
           ]
         },
         {
-          "description": "command + f = Dash",
+          "description": "command + f",
           "type": "basic",
           "from": {
             "key_code": "f",
@@ -5047,12 +5047,12 @@
           },
           "to": [
             {
-              "shell_command": "open -a Dash"
+              "shell_command": "osascript -e 'tell application id \"com.runningwithcrayons.Alfred\" to run trigger \"F\" in workflow \"com.thirteen37.capslock\" with argument \"Cmd\"'"
             }
           ]
         },
         {
-          "description": "option + f = Dictionary",
+          "description": "option + f",
           "type": "basic",
           "from": {
             "key_code": "f",
@@ -5068,12 +5068,12 @@
           },
           "to": [
             {
-              "shell_command": "open -a Dictionary"
+              "shell_command": "osascript -e 'tell application id \"com.runningwithcrayons.Alfred\" to run trigger \"F\" in workflow \"com.thirteen37.capslock\" with argument \"Opt\"'"
             }
           ]
         },
         {
-          "description": "f = Alfred 4",
+          "description": "f",
           "type": "basic",
           "from": {
             "key_code": "f",
@@ -5088,12 +5088,12 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Alfred 4'"
+              "shell_command": "osascript -e 'tell application id \"com.runningwithcrayons.Alfred\" to run trigger \"F\" in workflow \"com.thirteen37.capslock\"'"
             }
           ]
         },
         {
-          "description": "command + g = Chrome",
+          "description": "command + g",
           "type": "basic",
           "from": {
             "key_code": "g",
@@ -5109,12 +5109,12 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Google Chrome'"
+              "shell_command": "osascript -e 'tell application id \"com.runningwithcrayons.Alfred\" to run trigger \"G\" in workflow \"com.thirteen37.capslock\" with argument \"Cmd\"'"
             }
           ]
         },
         {
-          "description": "option + g = Calender",
+          "description": "option + g",
           "type": "basic",
           "from": {
             "key_code": "g",
@@ -5130,12 +5130,12 @@
           },
           "to": [
             {
-              "shell_command": "open -a Calendar"
+              "shell_command": "osascript -e 'tell application id \"com.runningwithcrayons.Alfred\" to run trigger \"G\" in workflow \"com.thirteen37.capslock\" with argument \"Opt\"'"
             }
           ]
         },
         {
-          "description": "g = Intellij IDEA",
+          "description": "g",
           "type": "basic",
           "from": {
             "key_code": "g",
@@ -5150,7 +5150,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'IntelliJ IDEA'"
+              "shell_command": "osascript -e 'tell application id \"com.runningwithcrayons.Alfred\" to run trigger \"G\" in workflow \"com.thirteen37.capslock\"'"
             }
           ]
         }

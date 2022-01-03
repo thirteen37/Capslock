@@ -1256,111 +1256,111 @@ rules:
       #==========================================================#
       # ( e ) --> safari / finder / mail                         #
       #==========================================================#
-      - description: 'command + e = finder'
+      - description: 'command + e'
         type: basic
         from: { key_code: e, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a finder } ]
+        to: [ { shell_command: osascript -e 'tell application id "com.runningwithcrayons.Alfred" to run trigger "E" in workflow "com.thirteen37.capslock" with argument "Cmd"' } ]
 
-      - description: 'option + e = mail'
+      - description: 'option + e'
         type: basic
         from: { key_code: e, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a mail } ]
+        to: [ { shell_command: osascript -e 'tell application id "com.runningwithcrayons.Alfred" to run trigger "E" in workflow "com.thirteen37.capslock" with argument "Opt"' } ]
 
-      - description: 'e = safari'
+      - description: 'e'
         type: basic
         from: { key_code: e, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Safari } ]
+        to: [ { shell_command: osascript -e 'tell application id "com.runningwithcrayons.Alfred" to run trigger "E" in workflow "com.thirteen37.capslock"' } ]
 
 
       #==========================================================#
       # ( r ) --> iterm / preview / terminal                     #
       #==========================================================#
-      - description: 'command + r = preview'
+      - description: 'command + r'
         type: basic
         from: { key_code: r, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Preview } ]
+        to: [ { shell_command: osascript -e 'tell application id "com.runningwithcrayons.Alfred" to run trigger "F" in workflow "com.thirteen37.capslock" with argument "Cmd"' } ]
 
-      - description: 'option + r = terminal'
+      - description: 'option + r'
         type: basic
         from: { key_code: r, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a terminal } ]
+        to: [ { shell_command: osascript -e 'tell application id "com.runningwithcrayons.Alfred" to run trigger "F" in workflow "com.thirteen37.capslock" with argument "Opt"' } ]
 
-      - description: 'r = iTerm2'
+      - description: 'r'
         type: basic
         from: { key_code: r, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a iTerm } ]
+        to: [ { shell_command: osascript -e 'tell application id "com.runningwithcrayons.Alfred" to run trigger "F" in workflow "com.thirteen37.capslock"' } ]
 
       #==========================================================#
       # ( t ) --> vscode / typora / notes                        #
       #==========================================================#
-      - description: 'command + t = typora'
+      - description: 'command + t'
         type: basic
         from: { key_code: t, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Typora } ]
+        to: [ { shell_command: osascript -e 'tell application id "com.runningwithcrayons.Alfred" to run trigger "T" in workflow "com.thirteen37.capslock" with argument "Cmd"' } ]
 
-      - description: 'option + t = notes'
+      - description: 'option + t'
         type: basic
         from: { key_code: t, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a notes } ]
+        to: [ { shell_command: osascript -e 'tell application id "com.runningwithcrayons.Alfred" to run trigger "T" in workflow "com.thirteen37.capslock" with argument "Opt"' } ]
 
-      - description: 't = vscode'
+      - description: 't'
         type: basic
         from: { key_code: t, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a 'Visual Studio Code' } ]
+        to: [ { shell_command: osascript -e 'tell application id "com.runningwithcrayons.Alfred" to run trigger "T" in workflow "com.thirteen37.capslock"' } ]
 
       #==========================================================#
       # ( y ) --> siri / karabiner / amphetamine                 #
       #==========================================================#
-      - description: 'command + y = karabiner'
+      - description: 'command + y'
         type: basic
         from: { key_code: y, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Karabiner-Elements } ]
+        to: [ { shell_command: osascript -e 'tell application id "com.runningwithcrayons.Alfred" to run trigger "Y" in workflow "com.thirteen37.capslock" with argument "Cmd"' } ]
 
-      - description: 'option + y = amphetamine'
+      - description: 'option + y'
         type: basic
         from: { key_code: y, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a amphetamine } ]
+        to: [ { shell_command: osascript -e 'tell application id "com.runningwithcrayons.Alfred" to run trigger "Y" in workflow "com.thirteen37.capslock" with argument "Opt"' } ]
 
-      - description: 'y = Siri'
+      - description: 'y'
         type: basic
         from: { key_code: y, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Siri } ]
+        to: [ { shell_command: osascript -e 'tell application id "com.runningwithcrayons.Alfred" to run trigger "Y" in workflow "com.thirteen37.capslock"' } ]
 
       #==========================================================#
       # ( f ) --> alfred 4 / Dash / Dictionary                   #
       #==========================================================#
-      - description: 'command + f = Dash'
+      - description: 'command + f'
         type: basic
         from: { key_code: f, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Dash } ]
+        to: [ { shell_command: osascript -e 'tell application id "com.runningwithcrayons.Alfred" to run trigger "F" in workflow "com.thirteen37.capslock" with argument "Cmd"' } ]
 
-      - description: 'option + f = Dictionary'
+      - description: 'option + f'
         type: basic
         from: { key_code: f, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Dictionary } ]
+        to: [ { shell_command: osascript -e 'tell application id "com.runningwithcrayons.Alfred" to run trigger "F" in workflow "com.thirteen37.capslock" with argument "Opt"' } ]
 
-      - description: 'f = Alfred 4'
+      - description: 'f'
         type: basic
         from: { key_code: f, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a 'Alfred 4' } ]
+        to: [ { shell_command: osascript -e 'tell application id "com.runningwithcrayons.Alfred" to run trigger "F" in workflow "com.thirteen37.capslock"' } ]
 
       #==========================================================#
       # ( g ) --> idea / chrome / calender                       #
       #==========================================================#
-      - description: 'command + g = Chrome'
+      - description: 'command + g'
         type: basic
         from: { key_code: g, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a 'Google Chrome' } ]
+        to: [ { shell_command: osascript -e 'tell application id "com.runningwithcrayons.Alfred" to run trigger "G" in workflow "com.thirteen37.capslock" with argument "Cmd"' } ]
 
-      - description: 'option + g = Calender'
+      - description: 'option + g'
         type: basic
         from: { key_code: g, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Calendar } ]
+        to: [ { shell_command: osascript -e 'tell application id "com.runningwithcrayons.Alfred" to run trigger "G" in workflow "com.thirteen37.capslock" with argument "Opt"' } ]
 
-      - description: 'g = Intellij IDEA'
+      - description: 'g'
         type: basic
         from: { key_code: g, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a 'IntelliJ IDEA' } ]
+        to: [ { shell_command: osascript -e 'tell application id "com.runningwithcrayons.Alfred" to run trigger "G" in workflow "com.thirteen37.capslock"' } ]
 
 
 
