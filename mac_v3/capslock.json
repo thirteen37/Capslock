@@ -197,7 +197,7 @@
           ]
         },
         {
-          "description": "control + h = ctrl + left (prev desktop)",
+          "description": "control + h = ctrl + option + command + left (prev desktop)",
           "type": "basic",
           "from": {
             "key_code": "h",
@@ -215,7 +215,9 @@
             {
               "key_code": "left_arrow",
               "modifiers": [
-                "left_control"
+                "left_control",
+                "left_option",
+                "left_command"
               ]
             }
           ]
@@ -859,7 +861,7 @@
           ]
         },
         {
-          "description": "control + l = ctrl + right (next desktop)",
+          "description": "control + l = ctrl + option + command + right (next desktop)",
           "type": "basic",
           "from": {
             "key_code": "l",
@@ -877,7 +879,9 @@
             {
               "key_code": "right_arrow",
               "modifiers": [
-                "left_control"
+                "left_control",
+                "left_option",
+                "left_command"
               ]
             }
           ]
@@ -4369,7 +4373,9 @@
             {
               "key_code": "right_arrow",
               "modifiers": [
-                "left_control"
+                "left_control",
+                "left_option",
+                "left_command"
               ]
             }
           ]

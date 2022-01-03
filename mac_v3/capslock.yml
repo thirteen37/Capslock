@@ -69,10 +69,10 @@ rules:
         to: [ { key_code: tab , modifiers: [ left_control , left_shift ] } ]
 
       # control: desktop management
-      - description: 'control + h = ctrl + left (prev desktop)'
+      - description: 'control + h = ctrl + option + command + left (prev desktop)'
         type: basic
         from: { key_code: h, modifiers: { mandatory: [ left_control ,right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: left_arrow , modifiers: [ left_control ] } ]
+        to: [ { key_code: left_arrow , modifiers: [ left_control, left_option, left_command ] } ]
 
       # option: mouse move
       - description: 'option + h = mouse left'
@@ -243,10 +243,10 @@ rules:
         to: [ { key_code: tab , modifiers: [ left_control ] } ]
 
       # control: desktop management
-      - description: 'control + l = ctrl + right (next desktop)'
+      - description: 'control + l = ctrl + option + command + right (next desktop)'
         type: basic
         from: { key_code: l, modifiers: { mandatory: [ left_control ,right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: right_arrow , modifiers: [ left_control ] } ]
+        to: [ { key_code: right_arrow , modifiers: [ left_control, left_option, left_command ] } ]
 
       # option: mouse move
       - description: 'option + l = mouse move right'
@@ -1137,7 +1137,7 @@ rules:
       - description: 'option + tab = alter desktop'
         type: basic
         from: { key_code: tab, modifiers: { mandatory: [ left_option,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: right_arrow , modifiers: [ left_control ] } ]
+        to: [ { key_code: right_arrow , modifiers: [ left_control, left_option, left_command ] } ]
 
       - description: 'command tab = alter app rev'
         type: basic
