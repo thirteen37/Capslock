@@ -1,5 +1,8 @@
-compile:
-	yq eval capslock.yml -j > capslock.json
+%.json: %.yml
+	yq eval '(.rules[].manipulators[].from.modifiers | select(has("mandatory")) | .mandatory) |= ([ .[] | select(. == "hyper") |= ["right_command", "right_control", "right_shift", "right_option"]] | flatten)' $< | \
+	yq eval - -o=json > $@
+
+compile: capslock.json
 
 install: compile
 	mkdir -p $$HOME/.config/karabiner/assets/complex_modifications/
