@@ -26,6 +26,9 @@
               ]
             }
           },
+          "parameters": {
+            "basic.to_if_held_down_threshold_milliseconds": 1000
+          },
           "to": [
             {
               "key_code": "right_shift",
@@ -39,6 +42,11 @@
           "to_if_alone": [
             {
               "key_code": "escape"
+            }
+          ],
+          "to_if_held_down": [
+            {
+              "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"Show keymap\"'"
             }
           ]
         },
