@@ -77,7 +77,7 @@
           ]
         },
         {
-          "description": "spacebar = language switch",
+          "description": "spacebar = Toggle mute/unmute in VC",
           "type": "basic",
           "from": {
             "key_code": "spacebar",
@@ -92,10 +92,7 @@
           },
           "to": [
             {
-              "key_code": "spacebar",
-              "modifiers": [
-                "left_control"
-              ]
+              "shell_command": "osascript -e 'tell application \"Keyboard Maestro Engine\" to do script \"Global VC Mute/Unmute\"'"
             }
           ]
         },

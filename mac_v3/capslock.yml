@@ -33,10 +33,10 @@ rules:
         from: { key_code: escape, modifiers: { optional: [ caps_lock ], mandatory: [ hyper ] } }
         to: [ { key_code: caps_lock , modifiers: [ left_control ] } ]
 
-      - description: 'spacebar = language switch'
+      - description: 'spacebar = Toggle mute/unmute in VC'
         type: basic
         from: { key_code: spacebar, modifiers: { mandatory: [ hyper ] } }
-        to: [ { key_code: spacebar , modifiers: [ left_control ] } ]
+        to: [ { shell_command: osascript -e 'tell application "Keyboard Maestro Engine" to do script "Global VC Mute/Unmute"' } ]
 
       - description: 'command + spacebar = emoji'
         type: basic
